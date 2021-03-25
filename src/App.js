@@ -1,8 +1,9 @@
 import './App.css';
+import Device from './components/Device';
 
 const App = () => (
     <div>
-      Calculator App
+      <Device />
     </div>
 )
 

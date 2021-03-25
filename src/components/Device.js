@@ -1,8 +1,11 @@
 import React from 'react';
+import Input from './Input';
+import Keyboard from './Keyboard';
 
 const Device = () => (
     <div>
-        Calculator
+        <Input />
+        <Keyboard />
     </div>
 );
 
