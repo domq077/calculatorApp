@@ -2,11 +2,37 @@ import React, { useState } from 'react';
 import Input from './Input';
 import Keyboard from './Keyboard';
 
-const Device = ({onClick}) => {
-    const [result, setResult] = useState(0);
+const Device = ({onClick, calculate, reset}) => {
+    const [result, setResult] = useState('');
     
     onClick = (button) => {
-        setResult(result + button)
+        if(button === '=') {
+            calculate();
+        } else if(button === 'AC') {
+            reset();
+        } else {
+            setResult(result + button);
+        }
+    }
+
+    calculate = () => {
+        let tempResult = '';
+        if(result.includes('--')) {
+            tempResult = result.replace('--', '+');
+        } else {
+            tempResult = result;
+        }
+
+        try {
+            setResult((eval(tempResult) || '') + '');
+        } catch(e) {
+            setResult('error');
+        }
+
+    }
+
+    reset = () => {
+        setResult('');
     }
     
     return(
