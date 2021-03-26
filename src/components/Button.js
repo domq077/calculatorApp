@@ -10,6 +10,7 @@ const Button = ({value, onClick, buttonColor}) => (
     <ButtonCalc 
         buttonColor={buttonColor} 
         onClick={onClick}
+        value={value}
     >
         {value}
     </ButtonCalc>
