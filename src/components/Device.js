@@ -10,7 +10,9 @@ const Container = styled.div`
     width: 50vw;
     height: 50vh;
     margin: 0 auto;
-    padding-top: 15vh;
+    margin-top: 15vh;
+    border: 2px solid white;
+    background: #000B57;
 `;
 
 const Device = ({onClick, calculate, reset}) => {

@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Result = styled.div`
-    width: 20vw;
+    width: 46vw;
+    height: 5rem;
     background: white;
-    padding: 2rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
+    background: #EAEEFF;
 `;
 
 const Input = ({result}) => (
