@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import Input from './Input';
 import Keyboard from './Keyboard';
+
+const Container = styled.div`
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    padding-top: 15vh;
+`;
 
 const Device = ({onClick, calculate, reset}) => {
     const [result, setResult] = useState('');
@@ -36,10 +47,10 @@ const Device = ({onClick, calculate, reset}) => {
     }
     
     return(
-        <div>
+        <Container>
             <Input result={result}/>
             <Keyboard onClick={onClick}/>
-        </div>
+        </Container>
     )
 };
 
