@@ -7,6 +7,10 @@ const Result = styled.div`
     background: white;
     margin-bottom: 1rem;
     background: #EAEEFF;
+    font-size: 1.6rem;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 const Input = ({result}) => (

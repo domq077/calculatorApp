@@ -27,7 +27,7 @@ const Device = ({onClick, calculate, reset}) => {
             setResult(result + button);
         }
     }
-
+    
     calculate = () => {
         let tempResult = '';
         if(result.includes('--')) {
