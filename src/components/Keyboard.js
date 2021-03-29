@@ -5,7 +5,7 @@ import Button from './Button';
 const Container = styled.div`
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-    gap: .3rem;
+    gap: .4rem;
 `;
 
 const Keyboard = ({onClick}) => (
