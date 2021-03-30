@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Result = styled.div`
-    width: 46vw;
+    width: 450px;
     height: 5rem;
     background: white;
     margin-bottom: 1rem;
@@ -11,6 +11,11 @@ const Result = styled.div`
     word-break: break-all;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media(max-width: 550px) {
+        width: 85vw;
+        font-size: 1.3rem;
+    }
 `;
 
 const Input = ({result}) => (

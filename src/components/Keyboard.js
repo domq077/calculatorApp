@@ -6,6 +6,10 @@ const Container = styled.div`
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
     gap: .4rem;
+
+    @media(max-width: 550px) {
+        gap: .3rem;
+    }
 `;
 
 const Keyboard = ({onClick}) => (
