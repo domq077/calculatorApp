@@ -7,12 +7,16 @@ const Container = styled.div`
     display: grid;
     align-items: center;
     justify-items: center;
-    width: 50vw;
-    height: 50vh;
+    width: 500px;
+    height: 500px;
     margin: 0 auto;
     margin-top: 15vh;
     border: 2px solid white;
     background: #000B57;
+
+    @media(max-width: 550px) {
+        width: 90vw;
+    }
 `;
 
 const Device = ({onClick, calculate, reset}) => {
