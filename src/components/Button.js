@@ -42,6 +42,17 @@ const ButtonCalc = styled.button`
         width: calc(100% - 2px);
         height: 100%;
     }
+
+    @media(max-width: 550px) {
+        width: 4.875rem;
+        height: 2.625rem;
+    }
+
+    @media(max-width: 400px) {
+        width: 4.55rem;
+        height: 2.45rem;
+    }
+    
 `;
 
 const Button = ({value, onClick, buttonColor}) => (
